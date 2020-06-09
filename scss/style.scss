@@ -85,10 +85,10 @@ h1 {
     height: 20px;
     width: 20px;
     display: block;
-    animation: jump 1.5s linear infinite alternate;
 }
 
 @import "controlStyle";
+@import "mobile";
 
 @keyframes rotate {
     from {
@@ -97,16 +97,6 @@ h1 {
 
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes jump {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(10px);
     }
 }
 

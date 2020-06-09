@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .control-container {
+        top: 40px;
+    }
+
+    .container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .gradient-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .pointer-container {
+        height: 145px;
+        top: -42px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .control-container {
+        top: 80px;
+    }
+
+    .container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .gradient-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .pointer-container {
+        height: 145px;
+        top: -42px;
+    }
+
+    .btn {
+        height: 60px;
+    }
+}
