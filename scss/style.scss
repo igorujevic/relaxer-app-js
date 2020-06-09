@@ -13,6 +13,7 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
 h1 {
     font-weight: 400;
     font-size: 4rem;
@@ -34,6 +35,7 @@ h1 {
     &.grow {
         animation: grow 3s linear forwards;
     }
+    // shrink
     &.shrink {
         animation: shrink 3s linear forwards;
     }
@@ -85,6 +87,8 @@ h1 {
     display: block;
     animation: jump 1.5s linear infinite alternate;
 }
+
+@import "controlStyle";
 
 @keyframes rotate {
     from {

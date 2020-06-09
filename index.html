@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Relaxer App</title>
   </head>
   <body>
     <h1>Relaxer</h1>
+
     <div class="container">
       <div class="circle"></div>
 
@@ -18,6 +20,15 @@
       </div>
 
       <div class="gradient-circle"></div>
+    </div>
+
+    <div class="control-container">
+      <audio controls autoplay loop="true" id="player" class="">
+        <source src="/audio/relaxsound.mp3" />
+      </audio>
+      <button id="btn-audioPlay" class="btn" onclick="playStopMusic()">
+        Pause Music
+      </button>
     </div>
 
     <script src="script.js"></script>

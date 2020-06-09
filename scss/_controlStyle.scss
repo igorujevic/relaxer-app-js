@@ -1,0 +1,54 @@
+.control-container {
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    display: none;
+    // filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    border: 1px solid #14bac0;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #106066;
+    width: 400px;
+    height: 25px;
+
+    &::-webkit-media-controls-panel {
+        background-color: #106066;
+    }
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #106066;
+    border: 1px solid #14bac0;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    transition: all 0.3s ease-in-out;
+
+    &.btn-play {
+        background: #14bac0;
+        border: 1px solid #10664c8e;
+    }
+    &.btn-pause {
+        background: #10664c8e;
+        border: 1px solid #14bac0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+
+        background: darken($color: #106066, $amount: 1.3);
+    }
+}
