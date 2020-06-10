@@ -24,6 +24,34 @@
     .btn {
         height: 60px;
     }
+
+    #about {
+        text-align: justify;
+        h2 {
+            font-size: 1.3rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            img {
+                margin-top: 40px;
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,5 +79,33 @@
 
     .btn {
         height: 30px;
+    }
+
+    #about {
+        text-align: justify;
+        h2 {
+            font-size: 1.3rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1em;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            img {
+                margin-top: 40px;
+                visibility: visible;
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
     }
 }

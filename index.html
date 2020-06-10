@@ -5,31 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b826bb7d6c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Relaxer App</title>
   </head>
   <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+      </ul>
+    </nav>
     <h1>Relaxer</h1>
+    <section id="home">
+      <div class="container">
+        <div class="circle"></div>
 
-    <div class="container">
-      <div class="circle"></div>
+        <p class="text"></p>
 
-      <p class="text"></p>
+        <div class="pointer-container">
+          <div class="pointer"></div>
+        </div>
 
-      <div class="pointer-container">
-        <div class="pointer"></div>
+        <div class="gradient-circle"></div>
       </div>
 
-      <div class="gradient-circle"></div>
-    </div>
+      <div class="control-container">
+        <audio controls loop="true" id="player" class="">
+          <source src="/audio/relaxsound.mp3" />
+        </audio>
+        <button id="btn-audioPlay" class="btn" onclick="playStopMusic()">
+          Play Music
+        </button>
+      </div>
+    </section>
 
-    <div class="control-container">
-      <audio controls autoplay loop="true" id="player" class="">
-        <source src="/audio/relaxsound.mp3" />
-      </audio>
-      <button id="btn-audioPlay" class="btn" onclick="playStopMusic()">
-        Play Music
-      </button>
-    </div>
+    <section id="about">
+      <div class="content-container">
+        <h2>My Simple Relaxer App</h2>
+        <p>
+          This is a project from
+          <a
+            href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
+            target="_blank"
+          >
+            Traversy Media
+          </a>
+          20 web projects course on Udemy. It is Vanilla Js project. He created
+          an animation to visualize breathing to relax. Visual director tells
+          you when to breathe in, hold and breathe out
+        </p>
+        <p>I changed it a bit and added a few little things.</p>
+        <h4>Usefule links:</h4>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/bradtraversy/vanillawebprojects/tree/master/relaxer-app"
+              target="_blank"
+              >His repo</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.udemy.com/course/web-projects-with-vanilla-javascript/"
+              target="_blank"
+              >His udemy course</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/igorujevic/relaxer-app-js"
+              target="_blank"
+              >My repo</a
+            >
+          </li>
+        </ul>
+        <h4>Contact me:</h4>
+        <div class="socail-media-container">
+          <a
+            href="https://hr-hr.facebook.com/people/Igor-Ujevic/100001169646461"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/igorujevic/" target="_blank">
+            <i class="fab fa-instagram-square fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/igor-ujevi%C4%87-9a65931ab/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/igorujevic" target="_blank">
+            <i class="fab fa-github-square fa-2x"></i>
+          </a>
+        </div>
+        <div class="img-container">
+          <img src="img/undraw_pilates_gpdb.svg" alt="relax-man" />
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

@@ -1,5 +1,9 @@
+@import "colors";
 * {
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +14,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    // overflow: hidden;
     margin: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -88,7 +101,10 @@ h1 {
 }
 
 @import "controlStyle";
+@import "aboutStyle";
 @import "mobile";
+@import "scrollbarStyle";
+@import "navigationStyle";
 
 @keyframes rotate {
     from {

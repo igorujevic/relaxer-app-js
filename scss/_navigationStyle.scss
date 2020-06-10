@@ -1,0 +1,34 @@
+@import "colors";
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+
+    list-style: none;
+
+    li {
+        a {
+            color: $color1;
+            text-decoration: none;
+            font-size: 1.2rem;
+
+            opacity: 0.8;
+
+            &:hover {
+                color: $color2;
+                opacity: 1;
+            }
+        }
+    }
+}
