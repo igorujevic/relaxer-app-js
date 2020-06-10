@@ -54,3 +54,29 @@ function toggle(state) {
       break;
   }
 }
+
+// show mobile nav
+function openSideMenu() {
+  var x = document.getElementById('myLinks');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+}
+
+function openMenu() {
+  var menuClassName = document.getElementById('menu-links').className;
+  var menu = document.getElementById('menu-links');
+
+  if (menuClassName.includes('dropdown')) {
+    closeMenu();
+  } else {
+    menu.className = 'navbar-nav-dropdown';
+  }
+}
+
+function closeMenu() {
+  var menu = document.getElementById('menu-links');
+  menu.className = 'navbar-nav';
+}

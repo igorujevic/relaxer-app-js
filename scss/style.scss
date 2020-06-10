@@ -1,137 +1,144 @@
-@import "colors";
+@import 'colors';
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    background: #1b6f75 url("../img/bg.jpg") no-repeat center center/cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // overflow: hidden;
-    margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: #1b6f75 url('../img/bg.jpg') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // overflow: hidden;
+  margin: 0;
 }
 
 section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 4rem;
-    position: absolute;
-    z-index: 10;
+  font-weight: 400;
+  font-size: 4rem;
+  position: absolute;
+  z-index: 10;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 300px;
-    margin: auto;
-    position: relative;
-    transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  transform: scale(1);
 
-    // grow
-    &.grow {
-        animation: grow 3s linear forwards;
-    }
-    // shrink
-    &.shrink {
-        animation: shrink 3s linear forwards;
-    }
+  // grow
+  &.grow {
+    animation: grow 3s linear forwards;
+  }
+  // shrink
+  &.shrink {
+    animation: shrink 3s linear forwards;
+  }
 
-    p {
-        text-transform: uppercase;
-        font-size: 1.4rem;
-    }
+  p {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
 }
 
 .gradient-circle {
-    background: conic-gradient(#14bac0 0%, #21b9df 40%, #fff 40%, #fff 60%, #175e63 60%, #106066 100%);
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    z-index: -2;
+  background: conic-gradient(
+    #14bac0 0%,
+    #21b9df 40%,
+    #fff 40%,
+    #fff 60%,
+    #175e63 60%,
+    #106066 100%
+  );
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  z-index: -2;
 }
 
 .circle {
-    background-color: #010f1c;
+  background-color: #010f1c;
 
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .pointer-container {
-    position: absolute;
-    top: -40px;
-    left: 140x;
-    width: 20px;
-    height: 190px;
+  position: absolute;
+  top: -40px;
+  left: 140x;
+  width: 20px;
+  height: 190px;
 
-    animation: rotate 7.5s linear forwards infinite;
-    transform-origin: bottom center;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
 }
 .pointer {
-    background-color: white;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    display: block;
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
 }
 
-@import "controlStyle";
-@import "aboutStyle";
-@import "mobile";
-@import "scrollbarStyle";
-@import "navigationStyle";
+@import 'controlStyle';
+@import 'aboutStyle';
+@import 'mobile';
+@import 'scrollbarStyle';
+@import 'navigationStyle';
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes grow {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    to {
-        transform: scale(1.2);
-    }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 @keyframes shrink {
-    from {
-        transform: scale(1.2);
-    }
+  from {
+    transform: scale(1.2);
+  }
 
-    to {
-        transform: scale(1);
-    }
+  to {
+    transform: scale(1);
+  }
 }
